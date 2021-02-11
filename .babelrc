@@ -1,0 +1,17 @@
+{   
+    // 预设轉碼規則  現在用的是ES幾
+    // babel-env预设，这是一个智能预设，只要安装这一个preset，就会根据你设置的目标浏览器，自动将代码中的新特性转换成目标浏览器支持的代码。
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage", // usage-按需引入 entry-入口引入（整体引入） false-不引入polyfill
+                "corejs": 2,  // 2-corejs@2  3-corejs@3,
+                // 目標瀏覽器
+                // "targets": {
+                //     "chrome": "58"
+                // }
+            },
+        
+    ]]
+}
